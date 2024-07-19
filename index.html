@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persistent Preferences</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Persistent Preferences</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="content-section">
+                <h2>Item List</h2>
+                <input type="text" id="search-input" placeholder="Search items...">
+                <ul id="item-list">
+                    <!-- Initial items -->
+                    <li>Navjot Kaur</li>
+                    <li>Student ID: 90541112192</li>
+                    <li>CDI Student</li>
+                    <li>Nationality: Indian</li>
+                </ul>
+                <button id="add-item">Add Item</button>
+                <button id="remove-item">Remove Selected</button>
+            </div>
+
+            <div class="content-section">
+                <h2>Preferences Panel</h2>
+                <div>
+                    <label for="theme-select">Theme:</label>
+                    <select id="theme-select">
+                        <option value="default">Default</option>
+                        <option value="dark">Dark</option>
+                        <option value="light">Light</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="list-style-select">List Style:</label>
+                    <select id="list-style-select">
+                        <option value="disc">Disc</option>
+                        <option value="circle">Circle</option>
+                        <option value="square">Square</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="bg-color-select">Background Color:</label>
+                    <input type="color" id="bg-color-select" value="#ffffff">
+                </div>
+                <div>
+                    <label for="font-size-select">Font Size:</label>
+                    <select id="font-size-select">
+                        <option value="12px">12px</option>
+                        <option value="16px">16px</option>
+                        <option value="20px">20px</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="dark-mode-toggle">Dark Mode:</label>
+                    <input type="checkbox" id="dark-mode-toggle">
+                </div>
+                <button id="preview-theme">Preview Theme</button>
+                <button id="reset-preferences">Reset Preferences</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Algonquin College - All rights reserved.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
